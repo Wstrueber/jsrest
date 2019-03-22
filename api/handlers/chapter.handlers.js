@@ -32,7 +32,7 @@ const getChapter = async (chapterId, versions) => {
 			chapter: row.chapter_name,
 			versions,
 		}
-	})
+	})[0]
 
 	return result
 }
