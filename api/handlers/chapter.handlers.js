@@ -13,7 +13,7 @@ const getVersions = async chapterId => {
 			version_number: row.chapter_version_number,
 			created: row.chapter_version_create_date,
 			appversion:
-				(row.chapter_version_appversion === '11.0' && 'CC 2015') || 'CC 2017',
+				row.chapter_version_appversion === '11.0' ? 'CC 2015' : 'CC 2017',
 		}
 	})
 
